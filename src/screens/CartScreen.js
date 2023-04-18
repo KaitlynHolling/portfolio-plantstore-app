@@ -5,7 +5,7 @@ import TopNavigationBar from '../components/TopNavigationBar';
 import { ShoppingCartContext } from '../../App';
 
 const CartScreen = ({ navigation }) => {
-  const { cart, removeFromCart, emptyCart, incrementQuantity, decrementQuantity } = useContext(ShoppingCartContext);
+  const { cart, emptyCart, incrementQuantity, decrementQuantity } = useContext(ShoppingCartContext);
 
   const renderCartItem = ({ item }) => (
     <ListItem bottomDivider>
@@ -22,9 +22,9 @@ const CartScreen = ({ navigation }) => {
         <TouchableOpacity onPress={() => incrementQuantity(item.plant)}>
           <Text>+</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => removeFromCart(item.plant)}>
+        {/* <TouchableOpacity onPress={() => removeFromCart(item.plant)}>
           <Text>Remove</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
     </ListItem>
   );
