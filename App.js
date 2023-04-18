@@ -25,6 +25,7 @@ export default function App() {
     }
   };
 
+  // TODO: Fix this function, it's not filtering anything at the moment
   const removeFromCart = (plant) => {
     setCart(cart.filter((item) => item.plant.name !== plant.name));
   };
