@@ -26,7 +26,7 @@ export default function App() {
   };
 
   const removeFromCart = (plant) => {
-    setCart(cart.filter((item) => item !== plant));
+    setCart(cart.filter((item) => item.plant.name !== plant.name));
   };
 
   const incrementQuantity = (plant) => {
