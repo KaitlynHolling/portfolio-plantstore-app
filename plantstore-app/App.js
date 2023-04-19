@@ -1,7 +1,7 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import HomeScreen from "./src/";
+import HomeScreen from "./src/screens/HomeScreen";
 import NavigationPanel from "./src/screens/NavigationPanel";
 import CartScreen from "./src/screens/CartScreen";
 import PlantsForSaleScreen from "./src/screens/PlantsForSale";
