@@ -132,8 +132,8 @@ const plants = [
 
 const PlantsForSaleScreen = ({ route, navigation }) => {
   const { category } = route.params;
-
-  const filteredPlants = plants.filter((plant) => plant.category === category);
+  let filteredPlants = plants;
+  if (category) {filteredPlants = plants.filter((plant) => plant.category === category)}
 
   return (
     <View>

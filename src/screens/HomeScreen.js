@@ -9,7 +9,10 @@ const HomeScreen = ({ navigation }) => {
       <TopNavigationBar navigation={navigation} />
 
       <View>
-        <Text>Welcome to Plant Store!</Text>
+        <Text style={{
+          color: "green",
+          fontSize: 20
+        }}>Welcome to Plant Store!</Text>
         <Text>Your one-stop shop for all your plant needs.</Text>
       </View>
 

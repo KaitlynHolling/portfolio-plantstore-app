@@ -28,7 +28,7 @@ const NavigationPanel = ({ navigation }) => {
             console.log(`Navigating to ${category}`);
 
             if(category === "FAQ" || category === "Contact Us" | category === "Sale") {
-              navigation.navigate("HomeScreen"); // Replace with the appropriate screen
+              navigation.navigate("Home"); // Replace with the appropriate screen
             } else {
               navigation.navigate("PlantsForSale", { category });
             }
