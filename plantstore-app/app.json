@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Plant Store",
-    "slug": "Plant Store",
+    "name": "plantstore-app",
+    "slug": "plantstore-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
