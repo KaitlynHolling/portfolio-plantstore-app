@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { View, Text } from "react-native";
 import { Header, Icon } from "react-native-elements";
-import { ShoppingCartContext } from "../../App";
+import { ShoppingCartContext } from "../contexts/ShoppingCartContext";
 
 const TopNavigationBar = ({ navigation }) => {
   const { cart } = useContext(ShoppingCartContext);
