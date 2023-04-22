@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 import { ListItem, Button } from 'react-native-elements';
 import TopNavigationBar from '../components/TopNavigationBar';
-import { ShoppingCartContext } from '../../App';
+import { ShoppingCartContext } from "../contexts/ShoppingCartContext";
 
 const CartScreen = ({ navigation }) => {
   const { cart, emptyCart, incrementQuantity, decrementQuantity } = useContext(ShoppingCartContext);

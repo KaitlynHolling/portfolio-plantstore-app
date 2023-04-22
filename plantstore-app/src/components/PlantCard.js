@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, View, Image, TouchableOpacity, StyleSheet } from "react-native";
-
-import { ShoppingCartContext } from "../../App";
+import { ShoppingCartContext } from "../contexts/ShoppingCartContext";
 
 const PlantCard = ({ name, image, price, description }) => {
   const { addToCart } = React.useContext(ShoppingCartContext);
